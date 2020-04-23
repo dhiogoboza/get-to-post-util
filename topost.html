@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        const form = document.createElement('form');
+        form.method = "POST";
+
+        var items = location.search.substr(1).split("&");
+        for (let index = 0; index < items.length; index++) {
+            tmp = items[index].split("=");
+            let key = tmp[0];
+            let value = tmp[1];
+
+            if (key === "s") {
+                form.action = value;
+                continue;
+            } else if (key === "m") {
+                form.method = value;
+                continue;
+            } 
+            const hiddenField = document.createElement('input');
+            hiddenField.type = 'hidden';
+            hiddenField.name = key;
+            hiddenField.value = value;
+            form.appendChild(hiddenField);
+        }
+
+        document.body.appendChild(form);
+        form.submit();
+    </script>
+</body>
+</html>
+
