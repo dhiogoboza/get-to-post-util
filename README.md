@@ -11,4 +11,4 @@ Send a `GET` request to `https://dhiogoboza.github.io/get-to-post-utils/topost.h
 
 ## Example
 
-https://dhiogoboza.github.io/get-to-post-utils/topost.html?s=https://www2.correios.com.br/sistemas/rastreamento/resultado.cfm&objetos=LO900248154CN&acao=track
+https://dhiogoboza.github.io/get-to-post-util/topost.html?s=https://www2.correios.com.br/sistemas/rastreamento/resultado.cfm&objetos=LO900248154CN&acao=track
