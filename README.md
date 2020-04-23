@@ -1,4 +1,4 @@
-# get-to-post-utils
+# get-to-post-util
 
 Utility to send a `POST` method to an URL using `GET` params. This tool is useful for example in android applications intents to open a site with a `POST` result in browser.
 
